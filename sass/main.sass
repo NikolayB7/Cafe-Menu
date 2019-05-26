@@ -1,0 +1,452 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+// *****************my code *********
+
+header
+	width: 100%
+	position: relative
+	height: auto
+	padding: 45px 80px
+	background-image: url(../img/header/background.png)
+	background-color: #f15a29
+	background-size: cover
+	p
+		color: #ffffff
+		font-family: 'Rokkitt', serif
+		font-size: 32px
+		text-align: center
+	.log
+		
+		text-align: center
+		margin: 50px auto
+	.nav
+		a
+			text-decoration: none
+			color: #ffffff
+		#nav_menu
+			display: none
+			position: absolute
+			z-index: 1
+			top: 0
+			left: 0
+			background-color: #171819
+			height: 70%
+			width: 100%
+			padding: 5%	
+			i
+				position: absolute
+				bottom: 3%
+				right: 3%
+				color: #ffffff
+				&:hover
+					color: #f15a29
+			ul
+				li
+					padding: 2%
+					text-decoration: none
+					list-style: none
+					font-family: 'Rokkitt', serif
+					font-size: 24px
+					a
+						color: #ffffff
+						text-decoration: none
+						transition: color 0.3s ease
+						&:hover
+							color: #f15a29
+							
+			.nav_menu__list
+				width: 50%
+				float: left
+			.contact
+				float: right
+				width: 50%
+				p
+					font-family: 'Rokkitt', serif
+					font-size: 22px
+					&:nth-child(2n+1)
+						font-style: italic
+						font-weight: bold
+						font-size: 26px
+.menu
+	height: auto
+	width: 98.9%
+	p
+		position: absolute
+		top: 0
+		font-family: 'Playball', cursive
+		font-size: 28px
+
+.happy_hout__top
+	padding: 0 auto
+	width: 100%
+	position: absolute
+	top: 0
+	height: 106px
+	text-align: center
+	background-color: #e4e5e7
+	p
+		padding: 8% 25%
+		font-family: 'Rokkitt', serif
+.happy_hout__bot
+	width: 100%
+	position: absolute
+	bottom: 0
+	height: 103px
+	text-align: center
+	background-color: #f15a29
+	p
+		padding: 8% 25%
+		font-family: 'Rokkitt', serif
+.menu_breakfast
+	height: 206px
+	background-color: #171819
+	background-image: url(../img/menu/breakfast.png)
+	color: #ffffff
+	p
+		padding: 22% 30%
+	
+	
+.menu_lunch
+	height: 206px
+	background-color: #171819
+	background-image: url(../img/menu/lunch.png)
+	color: #ffffff
+	p
+		padding: 22% 30%
+.menu_dinner
+	height: 206px
+	background-color: #171819
+	background-image: url(../img/menu/dinner.png)
+	color: #ffffff
+	p
+		padding: 22% 30%
+.FastFood
+	position: relative
+	height: auto
+	padding: 50px 0
+	.FastFood_im
+		margin-right: 50px
+		box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1) 
+		padding: 20px
+		height: 435px
+		.Group1
+			background-image: url(../img/FastFood/Group1.png)
+			height: 50%
+			width: 100%
+			background-size: cover
+			background-position: center
+		.Group2
+			background-image: url(../img/FastFood/Group2.png)
+			height: 50%
+			width: 100%
+			background-size: cover
+			background-position: center
+	.FastFood_text
+		h2
+			font-family: 'Rokkitt', serif
+			font-size: 32px	
+			font-weight: bold
+		h4
+			font-size: 24px
+			font-family: 'Rokkitt', serif
+	.FastFood_modal
+		
+		display: none
+		box-shadow: 0 0 25px 15px rgba(221, 221, 221, 1)
+		background-color: #171819
+		position: absolute 
+		z-index: 2
+		top: 10%
+		padding: 2%
+		height: auto
+		width: 47%
+		i
+			color: #f15a29
+			float: right
+		h3
+			color: #f15a29
+			text-align: center
+			
+	
+.button_gallery
+	font-family: 'Rokkitt', serif
+	border: 1px solid #f15a29
+	border-radius: 10px
+	padding: 10px
+	a
+		font-weight: bold
+		color: #f15a29
+		text-decoration: none
+		&:hover
+			color: #f15a29
+			text-decoration: none
+
+
+
+
+
+.Drink
+	position: relative
+	height: auto
+	text-align: right
+	.Drink_btn
+		float: right
+	.Drink_im
+		margin-left: 50px
+		.Group3
+			background-image: url(../img/FastFood/Group3.png)
+			height: 100%
+			width: 50%
+			background-size: cover
+			background-position: center
+			float: left
+		.Group4	
+			background-image: url(../img/FastFood/Group4.png)
+			height: 100%
+			width: 50%
+			background-size: cover
+			background-position: center
+			float: right
+	.Drinks_modal
+		
+		display: none
+		box-shadow: 0 0 25px 15px rgba(221, 221, 221, 1);
+		background-color: #171819
+		position: absolute 
+		z-index: 5
+		top: 10%
+		padding: 2%
+		height: auto
+		width: 47%
+		i
+			margin-top: 2%
+			color: #f15a29
+			float: right
+		h3
+			color: #f15a29
+			text-align: center
+.food_category
+	height: auto
+	padding: 7% 5%
+	background-image: url(../img/categoryFooter/backgroungCategory.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	background-color: #111112
+	.ui-tabs
+		padding: 0
+	.ui-tabs .ui-tabs-nav
+		padding: 0
+	.ui-widget-header
+		background: none
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br
+		border: 0
+	.ui-tabs .ui-tabs-panel
+		height: 300px
+	.ui-tabs .ui-tabs-nav li
+		padding: 0 4%
+		margin: 0
+		border: 1px solid #c9c9c9
+		border-bottom: 0
+		border-radius: 0
+
+.tab-wrapper 
+	padding: 0
+	width: 100%
+	.tab-menu 
+		margin-bottom: 0
+		padding-left: 0
+		font-size: 0
+		display: flex
+		li 
+			font-family: 'Rokkitt', serif
+			font-size: 34px
+			// border-radius: 20px 20px 0 0 
+			flex-basis: auto
+			flex-grow: 1
+			text-align: center
+			font-size: 16px
+			position: relative
+			background-color: #fff
+			color: #bcbcbc
+			display: inline-block
+			padding: 20px 40px
+			opacity: 0.8
+			cursor: pointer
+			z-index: 0
+	.tab-menu li:not(:nth-child(1))
+		border-left: 1px solid rgb(114, 114, 114)
+		font-family: 'Rokkitt', serif
+		font-size: 24px
+		font-weight: bold
+	.tab-menu li:first-child
+		font-family: 'Rokkitt', serif
+		font-size: 24px
+		font-weight: bold
+	.tab-menu li:hover 
+		color: #464646
+		
+
+	.tab-menu li.active 
+		color: #f15a29
+		opacity: 1
+	.tab-content > div 
+		min-height: 360px
+		/* max-width: 1200px; */
+		background-color: #fff
+		box-sizing: border-box
+		width: 100%
+		padding: 2%
+		/* min-height: 200px; */
+		// border-radius: 0 0 20px 20px 
+	.tab-content 
+		ul 
+			li 
+				p 
+					font-style: italic
+					text-align: center
+					font-size: 24px
+					font-family: 'Rokkitt', serif
+	.list
+		text-align: center
+		li
+			img
+				margin: 1vh 0.5vw
+				p
+					font-family: 'Rokkitt', serif
+					font-size: 22px
+	.tab-content ul li 
+		display: inline-block
+		text-decoration: none
+	
+
+.review
+	height: auto
+	padding: 80px 120px
+	h5
+		color: #f15a29
+	.review_info
+		text-align: center
+		padding: 4%
+		box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+		.review_info__customers
+
+		.review_info__about
+			padding-left: 4%
+			border-left: 1px solid rgba(221, 221, 221, 1)
+			float: right
+		
+
+.carousel-inner
+	width: 70%
+.carousel
+	height: 70%
+	// background-color: grey
+	.carousel-item
+		text-align: center
+		p
+			margin: 15px auto
+			width: 70%
+		& :nth-child(2)
+			// float: right
+			font-weight: bold
+			color: #f15a29
+			font-family: 'Rokkitt', serif
+			font-size: 24px
+	.fa, .fas
+		color: #f15a29
+
+		
+.newsletter
+	text-align: center
+	height: auto
+	padding: 80px 
+	background-image: url(../img/newsletter/backroundnews.png)
+	background-color: #25292c
+	background-size: cover
+	background-position: center
+	color: #ffffff
+	h3
+		margin-bottom: 22px
+		font-family: 'Rokkitt', serif
+		font-size: 32px
+	#inp1
+		font-family: 'Rokkitt', serif
+		font-size: 22px
+		border-radius: 5px
+		padding-left: 2%
+		width: 380px
+		height: 45px
+	#inp2
+		margin-left: 10px
+		font-family: 'Rokkitt', serif
+		font-size: 22px
+		background-color: #f15a29
+		border-radius: 5px
+		width: 230px
+		height: 45px
+
+footer
+	background-color: #f15a29
+	height: auto
+	padding: 30px
+	text-align: center
+	.footer_logo
+		img
+			margin-top: 30px
+		p
+			margin: 20px 0 30px 0
+			color: #ffffff
+			font-family: 'Rokkitt', serif
+			font-size: 24px
+	.networks
+		img
+			margin: 0 10px 0 10px
+		p
+			margin-top: 40px
+			opacity: 0.6
+			font-family: 'Rokkitt', serif
+			font-size: 20px
+
+
+
+
+@import "media" // Always at the end
